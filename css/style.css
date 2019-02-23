@@ -1,0 +1,362 @@
+/* Global css */
+
+:root {
+  --white: #fff;
+  --black: #090808;
+  --brand: #facd00;
+  --light: #e3e3e3;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: 5px 0;
+}
+
+.inline-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.inline-btw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  padding: 120px 0;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-2 {
+  flex-basis: 0 0 48%;
+  max-width: 48%;
+  margin: 10px;
+}
+
+.col-3 {
+  max-width: 30%;
+  padding: 15px;
+}
+
+.btn {
+  background: linear-gradient(135deg, #fd0054 0%, #fd6b00 100%);
+  padding: 10px 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 40px 0;
+  color: var(--white);
+  font-size: 16px;
+}
+
+.brand {
+  color: var(--brand);
+}
+
+span {
+  padding: 0 10px;
+}
+
+.big {
+  font-weight: 900;
+  color: var(--brand);
+  padding: 4px 0;
+  font-size: 24px;
+}
+
+.small {
+  font-weight: 300;
+  color: var(--white);
+  padding: 3px 0;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+/*Home css*/
+
+.banner {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/banner.jpg');
+}
+
+/* .banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(204, 110, 93, 0.8);
+  z-index: -10;
+} */
+
+.banner-content .title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: var(--brand);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 3.4rem;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.tag {
+  color: var(--white);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 100;
+}
+
+.tel {
+  padding-right: 20px;
+  font-size: 30px;
+}
+
+.content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 42px;
+  color: var(--white);
+  padding-left: 20px;
+}
+
+.review {
+  background: linear-gradient(135deg, #fd0054 0%, #fd6b00 100%);
+  padding: 50px 20px;
+  overflow: hidden;
+}
+
+.review .content-client {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.quote {
+  padding: 20px 0;
+  color: #fff;
+}
+
+.author {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  color: var(--white);
+  margin-top: 60px;
+}
+
+
+/* form css */
+
+input[type=text],
+input[type=email] {
+  font-size: 24px;
+  background: transparent;
+  border: 0;
+  margin: 10px 0;
+  width: 70%;
+  border-bottom: 1px solid var(--white);
+}
+
+input [type=email]:focus,
+input[type=text]:focus {
+  outline: none;
+  border-bottom: 1px solid var(--brand);
+}
+
+input{
+  border: 0;
+}
+
+
+
+/* coach css */
+
+.coach .row{
+  padding: 100px 0;
+}
+
+.coach .col-2 {
+  max-width: 40%;
+  margin: 40px 70px;
+}
+
+.coach-content {
+  position: relative;
+}
+
+.coach-content>img {
+  position: absolute;
+  top: -100px;
+  border-radius: 20%;
+  left: 60px;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border: 5px solid var(--white);
+  padding: 10px;
+}
+
+.coach-content .header p {
+  background: linear-gradient(135deg, #fd0054 0%, #fd6b00 100%);
+  text-align: right;
+  font-size: 20px;
+  font-weight: 500;
+  width: 70%;
+  margin-left: auto;
+  color: #fff;
+}
+
+/* plans css */
+
+.card .header {
+  font-size: 24px;
+  background: linear-gradient(135deg, #fd0054 0%, #fd6b00 100%);
+  text-align: center;
+  color: var(--white);
+  font-weight: 500;
+  background-color: var(--brand);
+  padding: 30px 10px;
+}
+
+.card .caption {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--white);
+  height: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card .caption a {
+  color: var(--black);
+}
+
+.contact{
+   background-image: url('../assets/banner.jpg');
+}
+
+/* footer css */
+.footer,.map{
+  background-color: #333;
+}
+
+.footer .inline-btw {
+  padding: 100px 50px;
+}
+
+.social {
+  font-size: 50px;
+  display: flex;
+  margin: 50px 0;
+}
+
+.social a {
+  margin: 0 20px;
+}
+
+.social a:hover {
+  color: var(--brand);
+  transition: all 2s;
+}
+
+.footer .small {
+  font-style: normal;
+  font-size: 24px;
+}
+
+.footer .big {
+  font-size: 42px;
+  font-style: normal;
+}
+
+.rights {
+  padding-bottom: 20px;
+}
+
+.rights p {
+  color: var(--light);
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+}
