@@ -1,0 +1,116 @@
+@media screen and (max-width: 768px) {
+  .banner-content
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .logo-img {
+    width: 100px;
+  }
+
+  .logo,.tel {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  .container {
+    padding: 40px 0;
+    width: 95%;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding-bottom: 20px;
+  }
+
+  .content {
+    width: 90%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .small {
+    font-size: 16px;
+  }
+
+
+  .coach .row,
+  .gallery .row {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+
+  .col-2,.col-3 {
+    max-width: 100%;
+  }
+
+  .coach .col-2 {
+    margin: 10px;
+    max-width: 100%;
+  }
+
+  .coach-content>img {
+    top: -30%;
+    left: 50%;
+  }
+
+  .coach-content .header {
+    margin: 50px 0;
+  }
+
+  .coach .card {
+    margin-top: 100px;
+  }
+
+  .plans .card {
+    width: 75%;
+  }
+
+  .coach-content .header>p {
+    text-align: center;
+    width: 100%;
+    padding-top: 115px;
+  }
+
+  .review .content-client {
+    width: 100%;
+  }
+
+  .footer .inline-btw {
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+
+  .footer address {
+    padding: 20px 0 60px 0;
+    text-align: center;
+  }
+
+  .footer address .big {
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .footer .big {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .footer .small {
+    font-size: 18px;
+  }
+
+  .rights {
+    padding-bottom: 40px;
+  }
+
+  span {
+    padding: 0 2px;
+  }
+}

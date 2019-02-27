@@ -68,7 +68,7 @@ li {
 
 .container {
   width: 90%;
-  padding: 120px 0;
+  padding: 60px 0;
   margin: 0 auto;
 }
 
@@ -77,7 +77,7 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 70px 0;
+  margin: 30px 0;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -163,7 +163,7 @@ span {
   letter-spacing: 3px;
   text-transform: capitalize;
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
 }
 
 .tag {
@@ -185,45 +185,60 @@ span {
 
 .tel {
   padding-right: 20px;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .content {
-  width: 60%;
+  width: 85%;
   margin: 0 auto;
 }
 
+.logo-img {
+  width: 250px;
+}
+
 .logo {
-  font-size: 42px;
+  font-size: 24px;
   color: var(--white);
   padding-left: 20px;
 }
 
-.review {
-  background: linear-gradient(135deg, #fd0054 0%, #fd6b00 100%);
-  padding: 50px 20px;
-  overflow: hidden;
+
+.testimonial img {
+  margin-bottom: -20px;
 }
 
-.review .content-client {
-  width: 80%;
-  margin: 0 auto;
+.testimonial .caption {
+  background-color: white;
+  padding: 20px;
 }
 
-.quote {
-  padding: 20px 0;
-  color: #fff;
+
+.testimonial .owl-nav button {
+  display: inline-block;
+
+  transition: .3s;
 }
 
-.author {
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 4px;
+.testimonial .owl-nav button:hover {
   color: var(--white);
-  margin-top: 60px;
 }
 
+.testimonial .fas {
+  font-size: 30px;
+  color: var(--brand);
+}
+
+.testimonial .owl-nav {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  outline: none;
+}
 
 /* form css */
 
@@ -252,12 +267,12 @@ input{
 /* coach css */
 
 .coach .row{
-  padding: 100px 0;
+  padding: 200px 0 40px 0;
 }
 
 .coach .col-2 {
-  max-width: 40%;
-  margin: 40px 70px;
+  max-width: 45%;
+  margin: 15px;
 }
 
 .coach-content {
@@ -266,36 +281,33 @@ input{
 
 .coach-content>img {
   position: absolute;
-  top: -100px;
-  border-radius: 20%;
-  left: 60px;
+  top: -30%;
+  left: 50%;
   transform: translateX(-50%);
   width: 200px;
   height: 200px;
-  border: 5px solid var(--white);
   padding: 10px;
 }
 
-.coach-content .header p {
-  background: linear-gradient(135deg, #fd0054 0%, #fd6b00 100%);
-  text-align: right;
+.coach-content .header p{
+  text-align: center;
   font-size: 20px;
   font-weight: 500;
-  width: 70%;
   margin-left: auto;
   color: #fff;
+  padding: 100px 0;
 }
 
 /* plans css */
 
 .card .header {
   font-size: 24px;
-  background: linear-gradient(135deg, #fd0054 0%, #fd6b00 100%);
+  background: linear-gradient(135deg, #fd0054 0%, #6f2bee 100%);
   text-align: center;
   color: var(--white);
   font-weight: 500;
   background-color: var(--brand);
-  padding: 30px 10px;
+  padding: 15px;
 }
 
 .card .caption {
@@ -321,7 +333,7 @@ input{
 }
 
 .footer .inline-btw {
-  padding: 100px 50px;
+  padding: 60px 50px;
 }
 
 .social {
